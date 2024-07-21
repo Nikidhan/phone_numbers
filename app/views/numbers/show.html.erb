@@ -1,10 +1,21 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @number %>
-
-<div>
-  <%= link_to "Edit this number", edit_number_path(@number) %> |
-  <%= link_to "Back to numbers", numbers_path %>
-
-  <%= button_to "Destroy this number", @number, method: :delete %>
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold"><%= @number.name %></h1>
+      <strong>1st Phone Number:</strong>
+      <%= @number.phone1%>
+    </p>
+    <div>
+    <p>
+      <strong>2nd Phone Number:</strong>
+      <%= @number.phone2%>
+    </p>
+    <p>
+      <strong>3rd Phone Number:</strong>
+      <%= @number.phone3%>
+    </p>
+    <br/>
+      <%= link_to "Back", numbers_path, class:"btn btn-secondary" %>
+      <%= link_to "Edit", edit_number_path(@number), class:"btn btn-warning" %>
+    </div>
+  </div>
 </div>

@@ -1,9 +1,11 @@
 <h1>New number</h1>
 
+<br>
+
 <%= render "form", number: @number %>
 
 <br>
 
 <div>
-  <%= link_to "Back to numbers", numbers_path %>
+  <%= link_to "Back", numbers_path, class:"btn btn-primary" %>
 </div>

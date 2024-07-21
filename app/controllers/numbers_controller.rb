@@ -52,7 +52,7 @@ class NumbersController < ApplicationController
     @number.destroy!
 
     respond_to do |format|
-      format.html { redirect_to numbers_url, notice: "Number was successfully destroyed." }
+      format.html { redirect_to numbers_url, notice: "Number was successfully deleted." }
       format.json { head :no_content }
     end
   end
